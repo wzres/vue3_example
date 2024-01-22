@@ -19,3 +19,7 @@ export const userLoginService = (loginData) =>{
 
     return request.post('/user/login',params)
 }
+
+export const userGetInfoService = () => {
+    return request.get('/user/userInfo')
+}

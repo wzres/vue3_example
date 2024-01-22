@@ -1,4 +1,5 @@
 import {createRouter, createWebHistory} from 'vue-router'
+import {useTokenStore} from '@/store/token'
 
 
 // 路由规则
@@ -23,6 +24,12 @@ const router = createRouter({
     history:createWebHistory(), //采用 html5 路由模式
     routes
 })
+
+// 登录访问拦截
+router.beforeEach((to) => {
+    const userStore = useTokenStore()
+    if (!userStore.token && to.path !== '/login') return '/login'
+  })
 
 // 将路由对象暴露出去
 export default router

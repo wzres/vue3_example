@@ -16,6 +16,14 @@
 defineProps(['title'])
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
+.box-card {
+    // height:100vh;
+    min-height: 100vh;
 
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 </style>

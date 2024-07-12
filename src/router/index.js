@@ -8,12 +8,10 @@ const routes = [
     {
     path:'/',
     component:() => import('@/views/Layout.vue'),
+    redirect:'/article/category',
     children:[
-        {path:'/article/category',component:() =>import('@/views/article/ArticleCategory.vue')},
-        {path:'/article/manage',component:() =>import('@/views/article/ArticleManage.vue')},
-        {path:'/user/info',component:() =>import('@/views/user/userInfo.vue')},
-        {path:'/user/avatar',component:() =>import('@/views/user/userAvatar.vue')},
-        {path:'/user/resetPassword',component:() =>import('@/views/user/userResetPassword.vue')},
+        {path:'/article/category',component:() => import('@/views/article/ArticleCategory.vue')},
+        {path:'/article/manage',component:() => import('@/views/article/ArticleManage.vue')}
     ]}
 ]
 

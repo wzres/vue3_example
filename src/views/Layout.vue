@@ -1,13 +1,45 @@
 <template>
-    <div>
-        主页布局
+    <div class="common-layout">
+      <el-container>
+        <el-aside width="200px">
+            <el-menu
+            router
+		    active-text-color="#ffd04b" 
+            background-color="transparent" 
+            text-color="#fff"
+          >
+			
+			<!--与多级菜单同级的菜单项-->
+            <el-menu-item index="/article/category">
+                <el-icon><Aim /></el-icon> <span>分类管理</span>
+            </el-menu-item>
+			<!--与多级菜单同级的菜单项-->
+            <el-menu-item index="/article/manage">
+                <el-icon><Aim /></el-icon> <span>文章管理</span>
+            </el-menu-item>
+        </el-menu>
+        </el-aside>
+        <el-container>
+          <el-header>Header</el-header>
+          <el-main>
+            <router-view></router-view>
+          </el-main>
+          <el-footer>Footer</el-footer>
+        </el-container>
+      </el-container>
     </div>
-</template>
+  </template>
 
 <script setup>
 
 </script>
 
 <style lang="scss" scoped>
+.el-container {
+    height: 100vh;
+}
 
+.el-aside {
+    background-color: slateblue
+}
 </style>

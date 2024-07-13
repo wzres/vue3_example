@@ -38,6 +38,11 @@ import Footer from '@/components/Footer.vue';
     flex-grow: 1;
   }
 }
+
+.el-main {
+  width: 500px;
+}
+
 // 右侧边栏
 .sidebar {
   padding: 20px;

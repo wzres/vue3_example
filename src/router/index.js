@@ -3,7 +3,13 @@ import {createRouter, createWebHistory} from 'vue-router'
 
 // 路由规则
 const routes = [
-    //{path:"",component :}
+    {path:'/',component :() => import('@/views/Start.vue'),
+     redirect:'/index',      
+     children:[
+        {path:'/index',component:() => import('@/views/Index.vue')}
+     ]   
+
+    }
 ]
 
 // 创建路由对象

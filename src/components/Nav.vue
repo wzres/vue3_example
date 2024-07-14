@@ -1,7 +1,7 @@
 <template>
     <div class="logo">威仔资源网</div>
     <el-menu
-		        active-text-color="orange" 
+            active-text-color="orange" 
             :default-active="selectedIndex"
             text-color="teal"
             mode="horizontal"

@@ -6,7 +6,7 @@
         </el-header>
         <el-container>
           <el-main><router-view></router-view></el-main>
-          <el-aside class="sidebar">
+          <el-aside class="sidebar" width="350px">
             <Bar></Bar>
           </el-aside>
         </el-container>
@@ -37,10 +37,6 @@ import Footer from '@/components/Footer.vue';
   .el-menu {
     flex-grow: 1;
   }
-}
-
-.el-main {
-  width: 500px;
 }
 
 // 右侧边栏

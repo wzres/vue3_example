@@ -4,7 +4,7 @@ import { computed, ref } from 'vue'
 // 定义store
 // defineStore('仓库的唯一标识',()=>{...})
 
-export const useCounterStore = defineStore('count',()=>{
+export const useTokenStore = defineStore('token',()=>{
     // 声明数据 state ref()
   
 

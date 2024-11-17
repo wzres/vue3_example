@@ -26,12 +26,12 @@ instance.interceptors.request.use(
 //添加响应拦截器
 instance.interceptors.response.use(
     res=>{
-        if(res.data.code === 0){
+        if(res.data.code === 0 ||res.data.code === 200){
             return res.data
         }
 
         ElMessage.error(res.data.message || '服务异常')
-        return Promise.reject(res.data)
+        return Promise.reject(res.data.items)
     },
     err=>{
         alert('服务异常');

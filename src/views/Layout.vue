@@ -10,8 +10,8 @@
           >
 			
 			<!--与多级菜单同级的菜单项-->
-            <el-menu-item index="/article/category">
-                <el-icon><Aim /></el-icon> <span>分类管理</span>
+            <el-menu-item index="/fruits">
+                <el-icon><Aim /></el-icon> <span>水果管理</span>
             </el-menu-item>
 			<!--与多级菜单同级的菜单项-->
             <el-menu-item index="/article/manage">
